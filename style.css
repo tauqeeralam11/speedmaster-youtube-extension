@@ -1,0 +1,86 @@
+#custom-speed-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 10px;
+}
+.speed-btn {
+    background: rgba(0,0,0,0.45);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(4px);
+    min-width: 42px;
+}
+.speed-btn:hover {
+    background: rgba(255,0,0,0.85);
+    transform: translateY(-1px);
+}
+.speed-btn.active {
+    background: rgba(255,0,0,0.92);
+    border-color: rgba(255,255,255,0.15);
+    box-shadow: 0 0 10px rgba(255,0,0,0.35);
+}
+.speed-btn:active {
+    transform: scale(0.96);
+}
+.custom-input-wrapper {
+    display: flex;
+    align-items: center;
+}
+.custom-speed-input {
+    width: 52px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(0,0,0,0.45);
+    color: white;
+    outline: none;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    backdrop-filter: blur(4px);
+    transition: all 0.2s ease;
+    appearance: none;
+}
+.custom-speed-input:focus {
+    border-color: rgba(255,0,0,0.8);
+    box-shadow: 0 0 8px rgba(255,0,0,0.35);
+}
+.custom-speed-input::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+.custom-speed-input::-webkit-outer-spin-button,
+.custom-speed-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#speed-toast {
+    position: absolute;
+    bottom: 42px;
+    right: 0;
+    background: rgba(15,15,15,0.96);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    backdrop-filter: blur(10px);
+    z-index: 999999;
+}
+#speed-toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
