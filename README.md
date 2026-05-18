@@ -66,6 +66,7 @@ https://github.com/tauqeeralam11/speedmaster-youtube-extension.git
 ```
 
 Or download ZIP directly from GitHub.
+after downloading, extract/unzip the ZIP file
 
 ---
 
@@ -179,5 +180,3 @@ If you like this project:
 - Fork the project
 - Share feedback
 - Contribute improvements
-
----
