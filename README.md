@@ -62,7 +62,7 @@ speedmaster-youtube-extension/
 Download or clone the repository:
 
 ```bash
-https://github.com/tauqeeralam11/speedmaster-youtube-extension.git
+git clone https://github.com/tauqeeralam11/speedmaster-youtube-extension.git
 ```
 
 Or download ZIP directly from GitHub.
